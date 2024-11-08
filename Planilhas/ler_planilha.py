@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Carrega a planilha sem considerar a primeira linha como cabeçalho
-df = pd.read_excel('equipes_projeto.xlsx', header=None)
+df = pd.read_excel('equipes_projeto.xlsx')
 
 # Salva os dados em um arquivo de texto
 with open('dados.txt', 'w') as f:

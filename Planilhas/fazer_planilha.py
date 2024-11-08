@@ -12,7 +12,6 @@ investimento = np.random.randint(0, 101, num_equipes)
 prazo = np.random.randint(0, 101, num_equipes)
 
 # Calculando o risco do projeto com base nos três parâmetros (fictício: média)
-risco = ((experiencia + investimento + prazo)/3).astype(int)
 
 # Criando o DataFrame
 df = pd.DataFrame({
@@ -20,7 +19,6 @@ df = pd.DataFrame({
     "Experiência (0-100)": experiencia,
     "Investimento (0-100)": investimento,
     "Prazo (0-100)": prazo,
-    "Risco do Projeto": risco
 })
 
 # Salvando a planilha em formato Excel

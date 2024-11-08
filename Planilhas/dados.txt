@@ -1,101 +1,100 @@
-Equipe	Experiência (0-100)	Investimento (0-100)	Prazo (0-100)	Risco do Projeto
-Equipe 1	51	23	69	47
-Equipe 2	92	25	71	62
-Equipe 3	14	88	26	42
-Equipe 4	71	59	8	46
-Equipe 5	60	40	61	53
-Equipe 6	20	28	36	28
-Equipe 7	82	14	96	64
-Equipe 8	86	44	50	60
-Equipe 9	74	64	43	60
-Equipe 10	74	88	23	61
-Equipe 11	87	70	78	78
-Equipe 12	99	8	58	55
-Equipe 13	23	87	31	47
-Equipe 14	2	0	95	32
-Equipe 15	21	7	87	38
-Equipe 16	52	87	51	63
-Equipe 17	1	62	61	41
-Equipe 18	87	10	57	51
-Equipe 19	29	80	51	53
-Equipe 20	37	7	11	18
-Equipe 21	1	34	38	24
-Equipe 22	63	34	1	32
-Equipe 23	59	32	2	31
-Equipe 24	20	4	100	41
-Equipe 25	32	40	55	42
-Equipe 26	75	27	80	60
-Equipe 27	57	6	58	40
-Equipe 28	21	72	1	31
-Equipe 29	88	71	1	53
-Equipe 30	48	11	91	50
-Equipe 31	90	33	53	58
-Equipe 32	58	32	86	58
-Equipe 33	41	47	100	62
-Equipe 34	91	22	95	69
-Equipe 35	59	61	96	72
-Equipe 36	79	87	0	55
-Equipe 37	14	36	18	22
-Equipe 38	61	98	1	53
-Equipe 39	61	43	52	52
-Equipe 40	46	85	43	58
-Equipe 41	61	90	89	80
-Equipe 42	50	34	31	38
-Equipe 43	54	64	69	62
-Equipe 44	63	98	31	64
-Equipe 45	2	100	67	56
-Equipe 46	100	46	54	66
-Equipe 47	50	77	74	67
-Equipe 48	6	2	55	21
-Equipe 49	20	0	16	12
-Equipe 50	72	4	37	37
-Equipe 51	38	89	23	50
-Equipe 52	17	13	68	32
-Equipe 53	3	26	97	42
-Equipe 54	88	8	69	55
-Equipe 55	59	78	85	74
-Equipe 56	13	14	10	12
-Equipe 57	8	89	15	37
-Equipe 58	89	41	96	75
-Equipe 59	52	76	72	66
-Equipe 60	1	50	58	36
-Equipe 61	83	62	69	71
-Equipe 62	91	95	79	88
-Equipe 63	59	51	92	67
-Equipe 64	70	95	2	55
-Equipe 65	43	3	19	21
-Equipe 66	7	93	58	52
-Equipe 67	46	100	35	60
-Equipe 68	34	22	18	24
-Equipe 69	77	14	89	60
-Equipe 70	80	42	66	62
-Equipe 71	35	28	18	27
-Equipe 72	49	35	19	34
-Equipe 73	3	12	95	36
-Equipe 74	1	31	70	34
-Equipe 75	5	70	51	42
-Equipe 76	53	58	32	47
-Equipe 77	3	85	39	42
-Equipe 78	53	27	38	39
-Equipe 79	92	65	81	79
-Equipe 80	62	41	0	34
-Equipe 81	17	44	10	23
-Equipe 82	89	61	91	80
-Equipe 83	43	56	56	51
-Equipe 84	33	5	88	42
-Equipe 85	73	27	49	49
-Equipe 86	61	27	22	36
-Equipe 87	99	43	30	57
-Equipe 88	13	83	93	63
-Equipe 89	94	29	41	54
-Equipe 90	47	61	98	68
-Equipe 91	14	74	6	31
-Equipe 92	71	91	15	59
-Equipe 93	77	88	89	84
-Equipe 94	86	61	59	68
-Equipe 95	61	96	1	52
-Equipe 96	39	0	0	13
-Equipe 97	84	26	47	52
-Equipe 98	79	61	11	50
-Equipe 99	81	76	68	75
-Equipe 100	52	2	36	30
+Equipe 1	51	23	69
+Equipe 2	92	25	71
+Equipe 3	14	88	26
+Equipe 4	71	59	8
+Equipe 5	60	40	61
+Equipe 6	20	28	36
+Equipe 7	82	14	96
+Equipe 8	86	44	50
+Equipe 9	74	64	43
+Equipe 10	74	88	23
+Equipe 11	87	70	78
+Equipe 12	99	8	58
+Equipe 13	23	87	31
+Equipe 14	2	0	95
+Equipe 15	21	7	87
+Equipe 16	52	87	51
+Equipe 17	1	62	61
+Equipe 18	87	10	57
+Equipe 19	29	80	51
+Equipe 20	37	7	11
+Equipe 21	1	34	38
+Equipe 22	63	34	1
+Equipe 23	59	32	2
+Equipe 24	20	4	100
+Equipe 25	32	40	55
+Equipe 26	75	27	80
+Equipe 27	57	6	58
+Equipe 28	21	72	1
+Equipe 29	88	71	1
+Equipe 30	48	11	91
+Equipe 31	90	33	53
+Equipe 32	58	32	86
+Equipe 33	41	47	100
+Equipe 34	91	22	95
+Equipe 35	59	61	96
+Equipe 36	79	87	0
+Equipe 37	14	36	18
+Equipe 38	61	98	1
+Equipe 39	61	43	52
+Equipe 40	46	85	43
+Equipe 41	61	90	89
+Equipe 42	50	34	31
+Equipe 43	54	64	69
+Equipe 44	63	98	31
+Equipe 45	2	100	67
+Equipe 46	100	46	54
+Equipe 47	50	77	74
+Equipe 48	6	2	55
+Equipe 49	20	0	16
+Equipe 50	72	4	37
+Equipe 51	38	89	23
+Equipe 52	17	13	68
+Equipe 53	3	26	97
+Equipe 54	88	8	69
+Equipe 55	59	78	85
+Equipe 56	13	14	10
+Equipe 57	8	89	15
+Equipe 58	89	41	96
+Equipe 59	52	76	72
+Equipe 60	1	50	58
+Equipe 61	83	62	69
+Equipe 62	91	95	79
+Equipe 63	59	51	92
+Equipe 64	70	95	2
+Equipe 65	43	3	19
+Equipe 66	7	93	58
+Equipe 67	46	100	35
+Equipe 68	34	22	18
+Equipe 69	77	14	89
+Equipe 70	80	42	66
+Equipe 71	35	28	18
+Equipe 72	49	35	19
+Equipe 73	3	12	95
+Equipe 74	1	31	70
+Equipe 75	5	70	51
+Equipe 76	53	58	32
+Equipe 77	3	85	39
+Equipe 78	53	27	38
+Equipe 79	92	65	81
+Equipe 80	62	41	0
+Equipe 81	17	44	10
+Equipe 82	89	61	91
+Equipe 83	43	56	56
+Equipe 84	33	5	88
+Equipe 85	73	27	49
+Equipe 86	61	27	22
+Equipe 87	99	43	30
+Equipe 88	13	83	93
+Equipe 89	94	29	41
+Equipe 90	47	61	98
+Equipe 91	14	74	6
+Equipe 92	71	91	15
+Equipe 93	77	88	89
+Equipe 94	86	61	59
+Equipe 95	61	96	1
+Equipe 96	39	0	0
+Equipe 97	84	26	47
+Equipe 98	79	61	11
+Equipe 99	81	76	68
+Equipe 100	52	2	36
