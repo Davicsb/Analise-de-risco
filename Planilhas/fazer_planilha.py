@@ -10,8 +10,9 @@ equipes = [f"Equipe {i+1}" for i in range(num_equipes)]
 experiencia = np.random.randint(0, 101, num_equipes)
 investimento = np.random.randint(0, 101, num_equipes)
 prazo = np.random.randint(0, 101, num_equipes)
-
-# Calculando o risco do projeto com base nos três parâmetros (fictício: média)
+complexidade = np.random.randint(0, 101, num_equipes)
+demanda = np.random.randint(0, 101, num_equipes)
+dependencia = np.random.randint(0, 101, num_equipes)
 
 # Criando o DataFrame
 df = pd.DataFrame({
@@ -19,6 +20,9 @@ df = pd.DataFrame({
     "Experiência (0-100)": experiencia,
     "Investimento (0-100)": investimento,
     "Prazo (0-100)": prazo,
+    "Complexidade do projeto (0-100)": complexidade, 
+    "Demanda do mercado (0-100)": demanda,
+    "Dependência da tecnologia de terceiros (0-100)": dependencia 
 })
 
 # Salvando a planilha em formato Excel
