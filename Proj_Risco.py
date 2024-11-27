@@ -22,7 +22,7 @@ print(df.iat[99,0])
 
 #Criando as funções de pertinencia, como vai de 0 a 100 deixei elas bem simples
 
-risco = ctrl.Antecedent(np.arange(0, 101, 10), 'risco')
+risco = ctrl.Consequent(np.arange(0, 101, 10), 'risco')
 
 experiencia = ctrl.Antecedent(np.arange(0, 101, 10), 'experiência')
 investimento = ctrl.Antecedent(np.arange(0, 101, 10), 'investimento')
