@@ -15,11 +15,6 @@ df = pd.read_excel(caminho)
 # Obtendo o número de linhas e colunas
 num_linhas, num_colunas = df.shape
 
-print(f'Número de linhas: {num_linhas}') #101
-print(f'Número de colunas: {num_colunas}') #11 nome, exp, invest, prazo, complex, demanda, dependencia, tamanho, historico, carga e escopo
-print(df.iat[99,0])
-
-
 #Criando as funções de pertinencia, como vai de 0 a 100 deixei elas bem simples
 
 risco = ctrl.Consequent(np.arange(0, 101, 10), 'risco')
@@ -148,18 +143,30 @@ risco_simul = ctrl.ControlSystemSimulation(risco_ctrl)
 
 #----------
 
-for x in range(5): # <--- coloquei só 5 pra testar, o normal seria 100
-    risco_simul.input['experiência'] = df.iat[x, 1] #<--- tem que ser o nome da label, não da variavel
-    risco_simul.input['investimento'] = df.iat[x, 2]
-    risco_simul.input['prazo'] = df.iat[x, 3]
-    risco_simul.input['complexidade do projeto'] = df.iat[x, 4]
-    risco_simul.input['demanda do mercado'] = df.iat[x, 5]
-    risco_simul.input['dependencia de terceiros'] = df.iat[x, 6]
-    risco_simul.input['tamanho da equipe'] = df.iat[x, 7]
-    risco_simul.input['historico de sucesso'] = df.iat[x, 8]
-    risco_simul.input['carga de trabalho'] = df.iat[x, 9]
-    risco_simul.input['escopo do projeto'] = df.iat[x, 10]
+# Criar uma coluna para o risco calculado
+df['Risco'] = np.nan
 
-    risco_simul.compute() # <--- essa linha ta dando erro, possivelmente errei alguma coisa nos input
-    print('O risco da %s é:' %df.iat[x, 0])
-    print(risco_simul.output['risco'])
+# Calcular o risco para cada linha e salvar na última coluna
+for i in range(len(df)):
+    try:
+        risco_simul.input['experiência'] = df.iloc[i, 1]
+        risco_simul.input['investimento'] = df.iloc[i, 2]
+        risco_simul.input['prazo'] = df.iloc[i, 3]
+        risco_simul.input['complexidade do projeto'] = df.iloc[i, 4]
+        risco_simul.input['demanda do mercado'] = df.iloc[i, 5]
+        risco_simul.input['dependencia de terceiros'] = df.iloc[i, 6]
+        risco_simul.input['tamanho da equipe'] = df.iloc[i, 7]
+        risco_simul.input['historico de sucesso'] = df.iloc[i, 8]
+        risco_simul.input['carga de trabalho'] = df.iloc[i, 9]
+        risco_simul.input['escopo do projeto'] = df.iloc[i, 10]
+
+        risco_simul.compute()
+        df.at[i, 'Risco'] = risco_simul.output['risco']
+    except Exception as e:
+        print(f"Erro na linha {i}: {e}")
+        df.at[i, 'Risco'] = None
+
+# Salvar o resultado em uma nova planilha
+caminho_saida = caminho.replace('.xlsx', '_com_risco.xlsx')
+df.to_excel(caminho_saida, index=False)
+print(f"Arquivo salvo com os riscos calculados em: {caminho_saida}")
