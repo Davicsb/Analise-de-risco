@@ -100,6 +100,7 @@ regra5 = ctrl.Rule(prazo['Medio'] & carga_de_trabalho['Media'] & dependencia_de_
 regra6 = ctrl.Rule(experiencia['Alta'] & investimento['Medio'] & dependencia_de_terceiros['Baixa'], risco['Baixo'])
 #investimento é alto e o prazo longo e o histórico de sucesso alto, então o risco é baixo.
 regra7 = ctrl.Rule(investimento['Alto'] & prazo['Longo'] & historico_de_sucesso['Alto'], risco['Baixo'])
+regra22 = ctrl.Rule(demanda_do_mercado['Alta'] & historico_de_sucesso['Alto'], risco['Baixo'])
 
 #----------------
 
@@ -111,6 +112,8 @@ regra8 = ctrl.Rule(demanda_do_mercado['Media'] & dependencia_de_terceiros['Media
 regra9 = ctrl.Rule(experiencia['Media'] & investimento['Medio'] & tamanho_da_equipe['Medio'], risco['Medio'])
 #tamanho da equipe grande e a carga de trabalho alta e a complexidade do projeto média, então o risco é médio.
 regra10 = ctrl.Rule(tamanho_da_equipe['Grande'] & carga_de_trabalho['Alta'] & complexidade_do_projeto['Media'], risco['Medio'])
+regra21 = ctrl.Rule(demanda_do_mercado['Baixa'] | historico_de_sucesso['Baixo'], risco['Medio'])
+regra23 = ctrl.Rule(experiencia['Baixa'], risco['Medio'])
 
 #----------------
 
@@ -138,7 +141,7 @@ regra20 = ctrl.Rule(escopo_do_projeto['Grande'] & experiencia['Media'] & depende
 
 #---------------
 
-risco_ctrl = ctrl.ControlSystem([regra1, regra2, regra3, regra4, regra5, regra6, regra7, regra8, regra9, regra10, regra11, regra12, regra13, regra14, regra15, regra16, regra17, regra18, regra19, regra20])
+risco_ctrl = ctrl.ControlSystem([regra21, regra1, regra2, regra3, regra4, regra5, regra6, regra7, regra8, regra9, regra10, regra11, regra12, regra13, regra14, regra15, regra16, regra17, regra18, regra19, regra20])
 risco_simul = ctrl.ControlSystemSimulation(risco_ctrl)
 
 #----------
