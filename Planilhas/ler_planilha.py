@@ -9,3 +9,4 @@ with open('dados.txt', 'w') as f:
     for index, row in df.iterrows():
         # Converte cada linha para string e escreve no arquivo
         f.write('\t'.join(map(str, row.values)) + '\n')
+print("Dados cadastrados com sucesso!")

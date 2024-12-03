@@ -3,7 +3,6 @@ import numpy as np
 
 # Dados para a criação da planilha
 num_equipes = 100  # Número de equipes fictícias
-np.random.seed(42)  # Semente para reprodução dos resultados
 
 # Gerando dados aleatórios
 equipes = [f"Equipe {i+1}" for i in range(num_equipes)]
