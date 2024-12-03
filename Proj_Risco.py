@@ -9,7 +9,7 @@ from skfuzzy import control as ctrl
 
 
 # ler a sheet
-caminho = input("digite o caminho do arquivo, ex: \'C:\\Users\\nome\\OneDrive\\Documentos\\equipes projeto.xlsx\' ")
+caminho = input("digite o caminho do arquivo, ex: \'C:\\Users\\nome\\OneDrive\\Documentos\\equipes projeto.xlsx\': ")
 df = pd.read_excel(caminho)
 
 # Obtendo o número de linhas e colunas
